@@ -1,9 +1,3 @@
 // TODO: write your code here
-export default function findBy(prop, value) {
-  return (item) => {
-    if (prop && item[prop] === value) {
-      return true;
-    }
-    return false;
-  };
-}
+const findBy = (prop, value) => (el) => el[prop] === value;
+export default findBy;
